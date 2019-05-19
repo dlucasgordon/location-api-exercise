@@ -1,0 +1,10 @@
+{
+  "name": "location-api-exercise",
+  "version": "1.0.0",
+  "description": "https://hastebin.com/podujequme.md",
+  "main": "app.js",
+  "repository": "git@github.com:dlucasgordon/location-api-exercise.git",
+  "author": "dlucasgordon",
+  "license": "MIT",
+  "dependencies": {}
+}
