@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# TypeScript build files
+/dist/*
+
+# Use .gitkeep to include directories where the contents are ignored
+!.gitkeep
+
