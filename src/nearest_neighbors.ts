@@ -1,8 +1,7 @@
-import geocode from './geocode'
+import { Location, NeighborPair } from './types'
 
-const nearest_neighbors = (locations: Array<string>): Array<[string, string]> => {
-  const loc_coords: Array<[string, number, number]> = geocode(locations)
-  const neighbors: Array<[string, string]> = []
+const nearest_neighbors = (locations: Array<Location>): Array<NeighborPair> => {
+  const neighbors: Array<NeighborPair> = []
   return neighbors
 }
 

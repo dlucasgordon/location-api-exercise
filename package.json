@@ -7,14 +7,17 @@
   "author": "dlucasgordon",
   "license": "MIT",
   "dependencies": {
+    "@google/maps": "^0.5.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
+    "express-async-handler": "^1.1.4",
     "ts-node-dev": "^1.0.0-pre.39"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
     "@types/express": "^4.16.1",
     "@types/node": "^12.0.2",
+    "google-maps-api-typings": "^1.0.5",
     "typescript": "^3.4.5"
   },
   "scripts": {

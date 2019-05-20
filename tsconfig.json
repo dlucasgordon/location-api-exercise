@@ -8,6 +8,7 @@
         "sourceMap": true,
         "outDir": "dist",
         "baseUrl": ".",
+        "types": ["google-maps-api-typings"]
     },
     "include": [
         "src/**/*"

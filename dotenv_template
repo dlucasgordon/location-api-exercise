@@ -2,3 +2,4 @@
 # into the program's `process.env` variable. To use it, copy to `.env`, open the new file, and fill in the values.
 
 SERVER_PORT=5000
+GOOGLE_GEOCODE_KEY=
