@@ -6,14 +6,16 @@
   "repository": "git@github.com:dlucasgordon/location-api-exercise.git",
   "author": "dlucasgordon",
   "license": "MIT",
+  "engines": {
+    "node": "11.15.0"
+  },
   "dependencies": {
     "@google/maps": "^0.5.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "express-async-handler": "^1.1.4",
     "geolib": "^2.0.24",
-    "k-d-tree": "^1.0.1",
-    "ts-node-dev": "^1.0.0-pre.39"
+    "k-d-tree": "^1.0.1"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
@@ -21,6 +23,7 @@
     "@types/geolib": "^2.0.23",
     "@types/node": "^12.0.2",
     "google-maps-api-typings": "^1.0.5",
+    "ts-node-dev": "^1.0.0-pre.39",
     "typescript": "^3.4.5"
   },
   "scripts": {

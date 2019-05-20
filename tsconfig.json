@@ -3,12 +3,12 @@
         "module": "commonjs",
         "esModuleInterop": true,
         "target": "es2018",
-        // "noImplicitAny": true,
+        "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
         "outDir": "dist",
         "baseUrl": ".",
-        "types": ["google-maps-api-typings"]
+        "types": ["google-maps-api-typings"],
     },
     "include": [
         "src/**/*"

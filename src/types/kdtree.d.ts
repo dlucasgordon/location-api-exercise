@@ -1,4 +1,4 @@
-// The k-d-tree module lacks TypeScript type declarations, so we added our own minimal set of declarations.
+// The `k-d-tree` module lacks TypeScript type declarations, so we added our own minimal set of declarations.
 
 declare module 'k-d-tree' {
   class KDTree<T extends {coordinates: [number, number]}> {

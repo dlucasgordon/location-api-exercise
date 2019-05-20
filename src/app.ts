@@ -5,7 +5,7 @@ import express from 'express'
 
 import api_router from './api_router'
 
-const PORT = process.env.SERVER_PORT
+const PORT = process.env.PORT
 
 const app = express()
 app.use(express.json())
