@@ -1,5 +1,7 @@
 import express from 'express'
 
+import nearest_neighbors from './nearest_neighbors'
+
 const NEAREST_NEIGHBOR_ROUTE = '/nearest-neighbors'
 
 const api_router = express.Router()
@@ -13,8 +15,7 @@ api_router.get(NEAREST_NEIGHBOR_ROUTE, (req, res) => {
     return
   }
   const locations: Array<string> = location_str.split('|')
-  console.log(locations)
-  res.json({neighbors: []})
+  res.json({neighbors: nearest_neighbors(locations)})
 })
 
 // Receive the locations as a JSON array in a POST request body, return the list of neighbors.
@@ -27,8 +28,7 @@ api_router.post(NEAREST_NEIGHBOR_ROUTE, (req, res) => {
     res.send('Error: Request body must be a non-empty JSON-formatted array of strings representing the list of locations.')
     return
   }
-  console.log(locations)
-  res.json({neighbors: []})
+  res.json({neighbors: nearest_neighbors(locations)})
 })
 
 export default api_router
