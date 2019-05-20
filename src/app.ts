@@ -1,17 +1,15 @@
 import dotenv from 'dotenv'
-import express from 'express'
-
 dotenv.config()
 
-const port = process.env.SERVER_PORT
-const app  = express()
-const api  = express.Router()
+import express from 'express'
 
-api.get('/nearest-neighbors', (req, res) => {
-  res.send('Hello, world!')
-})
+import api_router from './api_router'
 
-app.use('/api', api)
-app.listen(port, () =>
-  console.log(`Listening on port ${port}...`)
+const PORT = process.env.SERVER_PORT
+
+const app = express()
+app.use(express.json())
+app.use('/api', api_router)
+app.listen(PORT, () =>
+  console.log(`Listening on port ${PORT}...`)
 )
