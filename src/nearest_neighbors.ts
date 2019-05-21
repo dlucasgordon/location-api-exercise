@@ -4,7 +4,7 @@ import KDTree from 'k-d-tree'
 import { KnownLocation, Location, Neighbor } from './types/types'
 
 // To find the nearest neighbor of each location, we first construct a k-d-tree (en.wikipedia.org/wiki/K-d_tree) containing all
-// the locations, which takes O(n log n) time on average. Then looking up the nearest neighbors in the tree for a given location
+// the locations, which takes O(n log n) time on average. Looking up the nearest neighbors in the tree for a given location
 // is O(log n) on average, so finding the nearest neighbors for all the locations is O(n log n) on average.
 // If the location is an UnknownLocation, then return an UnknownNeighbor.
 const nearest_neighbors = (locations: Array<Location>): Array<Neighbor> => {
